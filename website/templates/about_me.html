@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{%block title%}About me{%endblock%}
+{%block image%}url("/static/images/background.jpg"){%endblock%}
+{%block content%}
+<link href="{{ url_for('static', filename = 'css/main.css') }}" rel="stylesheet" type="text/css" >
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card card-body h-100  border-info" id="profile-wrapper">
+                <img id="profile-pic" src="{{url_for('static', filename = 'images/raj1.jpg')}}">
+                <hr>
+                <h4 class="russo">Hello! I am Raj Bunsha</h4>
+
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="card card-body h-100  border-info">
+                <h4 class="russo">About me</h4>
+                <hr>
+                <p class="roboto">Hello this is me in my village</p>
+                <p class="roboto">It had been a long time since i visited to village,
+                I still remember when I had nothing to worry about my career or studies.My only job was to play but now the butterfly days are long gone and I am here </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-md-center">
+        <div class="col-md-1"></div>
+        <div id="preview-shadow">
+                <div id="preview">
+                    <div id="corner-tl" class="corner"></div>
+                    <div id="corner-tr" class="corner"></div>
+                    <h3 style="color: aqua;">What I Do</h3>
+                    <p style="color:antiquewhite;">I am currently studying and enjoying, game and web-desigining.</p>
+                    <div id="corner-br" class="corner"></div>
+                    <div id="corner-bl" class="corner"></div>
+                </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div id="preview-shadow">
+                <div id="preview2">
+                    <div id="corner-tl" class="corner"></div>
+                    <div id="corner-tr" class="corner"></div>
+                    <h3 style="color:blueviolet;">When I Do</h3>
+                    <p style="color:blanchedalmond;">I do it in my free time to enjoy and learn more about computer.</p>
+                    <div id="corner-br" class="corner"></div>
+                    <div id="corner-bl" class="corner"></div>
+                </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-body h-100  border-info">
+                <h4 class="russo">My Life as It had been</h4>
+                <hr>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card card-body h-100  border-info">
+                <h4 class="russo">My Long Term Plans</h4>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-body h-100  border-info">
+                <h4 class="russo">My Goals where I want to reach</h4>
+                <hr>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card card-body h-100  border-info">
+                <h4 class="russo">Where I Want to Go</h4>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+{%endblock%}

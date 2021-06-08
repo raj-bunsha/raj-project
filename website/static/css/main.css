@@ -1,0 +1,34 @@
+
+#profile-wrapper{
+	text-align: center;
+}
+
+#profile-pic{
+	width:200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+ul{
+	padding: 0;
+    list-style-type: none;
+}
+
+
+.social-links ul, li{
+	list-style-type:none;
+	display: inline-block;
+}
+
+.social{
+	width:20px;
+	height: 20px;
+}
+
+.left-column{
+		grid-area: left-column;
+		padding-top:50px;
+		padding-bottom: 50px;
+}
